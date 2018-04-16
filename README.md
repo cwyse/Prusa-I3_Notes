@@ -1,41 +1,31 @@
 
-# 2018 - 3D Printer Information
+# 3D Printer Information
 
 Resources for building, maintaining and using your Prusa i3 clone.
 
+## 1. Printer Specifications
 
-| Table of Contents |
-|--|
-|1. [Software](#1-software) |
-|1.1 [For Running your Printer](#11-for-running-your-printer) |
-|1.2 [Offline Printing](#12-offline-printing) |
-|1.3 [Source for 3D Files to Print](#13-source-for-3d-files-to-print) |
-|1.3.1 [Lego](#131-lego) |
-|1.4  [CAD and Design tools](#14-cad-and-design-tools-for-designing-things-to-print) |
-|2. [Hardware](#2-hardware) |
-|2.1 [Machine Specs](#21-machine-specific-info-to-tronxy-p802dx6-model) |
-|2.2 [Mainboard](#22-mainboard) |
-|2.3 [Drivers (for Melzi)](#23-drivers-for-melzi) |
-|2.4 [Firmware](#24-firmware---advanced-or-future-use) |
-|3. [Assembly](#3-assembly) |
-|3.1 [Manuals](#31-manuals) |
-|3.2 [Videos](#32-videos) |
-|3.3 [Tuning/Calibration](#33-tuningcalibration) |
-|3.4 [Troubleshooting](#34-troubleshooting) |
-|4. [Filament](#4-filament) |
-|4.1 [Filament Sources](#41-filament-sources) |
-|4.2 [Filament Brands](#42--brands) |
-|4.3 [Filament Additional Reading](#43-additional-reading) |
-|5. [Further Information, Enhancements...](#5-further-information-enhancements--interesting-projects) |
-|5.1 [Resources and Groups](#51-resources-and-groups) |
-|5.2 [Print Servers](#52-print-servers) |
-|5.3 [Enhancements](#53-enhancements) |
-|5.4 [Misc](#54-misc) |
-|[Glossary](#glossary) |
-|[Appendix](#appendix) |
+1. General
+   - Vendor:	Tronxy
+   - Manufacturer: Prusa
+   - Model: Prusa-I3
+   - Version:
+   - Serial Number:
+2. Components
+   - Mainboard: Melzi 2.0 V5
+     - CPU: ATMega1284P
+     - ​
+   - ​
+3. Miscellaneous
+   - [3D Printer Filament Guide 2018](https://all3dp.com/1/3d-printer-filament-types-3d-printing-3d-filament/)
+   - [PLA Filaments | ABS Filaments | Filament Recycler | RePLAy 3D](https://replay-3d.com/)
+   - [USB Tiny ISP Programmer](https://www.amazon.com/gp/product/B01FDD4EP0/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
+     - Brand: SenMod
+     - ![1523839624053](Files_CJW/USBTinyDescription.png)
 
 
 
+Below is from Paul Langdon.
 
 ## 1. Software
 
@@ -81,10 +71,10 @@ Prusa i3 is an open source design 3D printer. Information about the project can 
 
 ### 2.1 Machine Specific info to TRONXY P802D/X6 Model
 * **Nozzle temperature:**	170-275℃
-* **Heatbed temperature:**	0-110℃
-* **Structure:**	Acrylic
-* **Power Supply:**	110V/220V 20A
-* **Print Size:**	220 x 220 x 180mm(Max)
+	 **Heatbed temperature:**	0-110℃
+	 **Structure:**	Acrylic
+	 **Power Supply:**	110V/220V 20A
+	 **Print Size:**	220 x 220 x 180mm(Max)
 
 ![TronxyP802d.jpeg](/Files/TronxyP802d.jpeg)
 ![TronxyP802d.jpeg](/Files/TronxyP802d-1.jpeg)

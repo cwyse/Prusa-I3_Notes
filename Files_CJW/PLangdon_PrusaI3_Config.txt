@@ -1,0 +1,79 @@
+GCode output from Paul Langdon's printer
+
+well with M501 all i get is 
+< 9:04:58 PM: Info:Configuration loaded from EEPROM.Echo:M501 
+< 9:04:59 PM: Echo:M105
+
+M92, just 
+< 9:05:16 PM: Echo:M92
+
+if i do M503 i get:
+> 9:05:42 PM: N56 M503 *54
+< 9:05:42 PM: EPR:2 75 115200 Baudrate
+< 9:05:42 PM: EPR:3 129 578.183 Filament printed [m]
+< 9:05:42 PM: EPR:2 125 420355 Printer active [s]
+< 9:05:42 PM: EPR:2 79 0 Max. inactive time [ms,0=off]
+< 9:05:42 PM: EPR:2 83 360000 Stop stepper after inactivity [ms,0=off]
+< 9:05:42 PM: EPR:3 3 100.0000 X-axis steps per mm
+< 9:05:42 PM: EPR:3 7 100.0000 Y-axis steps per mm
+< 9:05:42 PM: EPR:3 11 400.0000 Z-axis steps per mm
+< 9:05:42 PM: EPR:3 15 400.000 X-axis max. feedrate [mm/s]
+< 9:05:42 PM: EPR:3 19 400.000 Y-axis max. feedrate [mm/s]
+< 9:05:42 PM: EPR:3 23 4.000 Z-axis max. feedrate [mm/s]
+< 9:05:42 PM: EPR:3 27 100.000 X-axis homing feedrate [mm/s]
+< 9:05:42 PM: EPR:3 31 100.000 Y-axis homing feedrate [mm/s]
+< 9:05:42 PM: EPR:3 35 2.000 Z-axis homing feedrate [mm/s]
+< 9:05:42 PM: EPR:3 39 20.000 Max. jerk [mm/s]
+< 9:05:42 PM: EPR:3 47 0.300 Max. Z-jerk [mm/s]
+< 9:05:42 PM: EPR:3 133 -38.000 X home pos [mm]
+< 9:05:42 PM: EPR:3 137 -5.000 Y home pos [mm]
+< 9:05:42 PM: EPR:3 141 0.000 Z home pos [mm]
+< 9:05:42 PM: EPR:3 145 265.000 X max length [mm]
+< 9:05:42 PM: EPR:3 149 230.000 Y max length [mm]
+< 9:05:42 PM: EPR:3 153 180.000 Z max length [mm]
+< 9:05:42 PM: EPR:3 51 400.000 X-axis acceleration [mm/s^2]
+< 9:05:42 PM: EPR:3 55 400.000 Y-axis acceleration [mm/s^2]
+< 9:05:42 PM: EPR:3 59 400.000 Z-axis acceleration [mm/s^2]
+< 9:05:42 PM: EPR:3 63 400.000 X-axis travel acceleration [mm/s^2]
+< 9:05:42 PM: EPR:3 67 400.000 Y-axis travel acceleration [mm/s^2]
+< 9:05:42 PM: EPR:3 71 400.000 Z-axis travel acceleration [mm/s^2]
+< 9:05:42 PM: EPR:0 106 0 Bed Heat Manager [0-3]
+< 9:05:42 PM: EPR:0 107 255 Bed PID drive max
+< 9:05:42 PM: EPR:0 124 80 Bed PID drive min
+< 9:05:42 PM: EPR:3 108 196.000 Bed PID P-gain
+< 9:05:42 PM: EPR:3 112 33.000 Bed PID I-gain
+< 9:05:42 PM: EPR:3 116 290.000 Bed PID D-gain
+< 9:05:42 PM: EPR:0 120 255 Bed PID max value [0-255]
+< 9:05:42 PM: EPR:3 200 90.000 Extr.1 steps per mm
+< 9:05:42 PM: EPR:3 204 50.000 Extr.1 max. feedrate [mm/s]
+< 9:05:42 PM: EPR:3 208 20.000 Extr.1 start feedrate [mm/s]
+< 9:05:42 PM: EPR:3 212 5000.000 Extr.1 acceleration [mm/s^2]
+< 9:05:42 PM: EPR:0 216 3 Extr.1 heat manager [0-3]
+< 9:05:42 PM: EPR:0 217 230 Extr.1 PID drive max
+< 9:05:42 PM: EPR:0 245 50 Extr.1 PID drive min
+< 9:05:42 PM: EPR:3 218 7.0000 Extr.1 PID P-gain/dead-time
+< 9:05:42 PM: EPR:3 222 2.0000 Extr.1 PID I-gain
+< 9:05:42 PM: EPR:3 226 40.0000 Extr.1 PID D-gain
+< 9:05:42 PM: EPR:0 230 255 Extr.1 PID max value [0-255]
+< 9:05:42 PM: EPR:2 231 0 Extr.1 X-offset [steps]
+< 9:05:42 PM: EPR:2 235 0 Extr.1 Y-offset [steps]
+< 9:05:42 PM: EPR:1 239 1 Extr.1 temp. stabilize time [s]
+< 9:05:42 PM: EPR:1 250 150 Extr.1 temp. for retraction when heating [C]
+< 9:05:42 PM: EPR:1 252 0 Extr.1 distance to retract when heating [mm]
+< 9:05:42 PM: EPR:0 254 255 Extr.1 extruder cooler speed [0-255]
+< 9:05:42 PM: Echo:M503
+
+i was assuming with 503, i would use the 
+< 9:05:42 PM: EPR:3 3 100.0000 X-axis steps per mm
+< 9:05:42 PM: EPR:3 7 100.0000 Y-axis steps per mm
+< 9:05:42 PM: EPR:3 11 400.0000 Z-axis steps per mm 
+
+values. BUT.. when i send in the M92 command with my computed values, then 503 again, nothing is updated
+
+my values are
+New X = (20/19.82) 100 = 100.90
+New Y = (20/20.03) 100 = 99.85
+New Z = (20/19.80) * 400 = 404.04
+
+so my new M92 command should be
+M92 X100.90 Y99.85 Z404.04
