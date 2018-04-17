@@ -6,16 +6,41 @@ Resources for building, maintaining and using your Prusa i3 clone.
 ## 1. Printer Specifications
 
 1. General
-   - Vendor:	Tronxy
+   - Original Developer: [Prusa Research](http://www.prusa3d.com)
+   - Vendor:	[Tronxy](http://www.tronxy.com/)
    - Manufacturer: Prusa
-   - Model: Prusa-I3
-   - Version:
+   - Model: TRONXY P802D/X6 (X6D_8_V1.6)
+   - Firmware (original): [Repetier-0.91](https://github.com/cwyse/avrdude-build-usbtiny/tree/master/firmware)
+   - Version: 1.6
    - Serial Number:
 2. Components
-   - Mainboard: Melzi 2.0 V5
-     - CPU: ATMega1284P
+   - Mainboard: [Melzi 2.0 V5](CJW_Files/Melzi-circuit.png)
+     - CPU: [ATmega1284P](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42719-ATmega1284P_Datasheet.pdf)
      - ​
-   - ​
+   - LCD
+     - 2004A
+   - 42-Stepper Motors
+     - Extruder: Tronxy 42H4054-16   NEMA 17    40 mm length, 54 N-cm Holding Torque, 1.6A
+       - Step angle: 1.8 degree (200 steps per revolution  --  check this)
+       - Number of phases: 2
+       - ​
+     - X/Y/Z-Axis: Tronxy 42H4062-23  NEMA 17  40 mm length, 62 N-cm Holding Torque, 2.3A
+     - 4 [A4982 Stepper Motor Driver](CJW_Files/A4982-Datasheet.pdf)
+     - [Parameter calculations](https://www.prusaprinters.org/calculator/#steppers)
+     - [Better parameter explanation](https://www.matterhackers.com/news/3d-printer-firmware-settings-stepper-motor-configuration)
+   - MK3 Hotbed
+     - 3 mm Aluminum
+   - Extruder
+     - Tronxy P802M Extruder
+     - Nozzle: 0.3 mm
+     - Heating Tube: 12V 40W
+     - Thermistor 100K
+     - 1.75 mm Filament
+   - Power Supply
+     - Tronxy S-250-12
+     - AC Input: 110/220V +/- 15%, 50/60Hz
+     - DC Output: 12V 20A
+     - Power 240W
 3. Miscellaneous
    - [3D Printer Filament Guide 2018](https://all3dp.com/1/3d-printer-filament-types-3d-printing-3d-filament/)
    - [PLA Filaments | ABS Filaments | Filament Recycler | RePLAy 3D](https://replay-3d.com/)
@@ -23,7 +48,9 @@ Resources for building, maintaining and using your Prusa i3 clone.
      - Brand: SenMod
      - ![1523839624053](Files_CJW/USBTinyDescription.png)
 
+## 2.  Documentation
 
+1. [Tronxy 3D Printer X6D Installation Guide](https://github.com/cwyse/3D-Printer-2018/blob/master/Files/TRONXY_X6D_installation_guideV.01.pdf)
 
 Below is from Paul Langdon.
 

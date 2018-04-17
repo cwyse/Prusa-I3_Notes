@@ -1,0 +1,53 @@
+< EPR:2 75 115200 Baudrate
+< EPR:3 129 121.939 Filament printed [m]
+< EPR:2 125 93379 Printer active [s]
+< EPR:2 79 0 Max. inactive time [ms,0=off]
+< EPR:2 83 360000 Stop stepper after inactivity [ms,0=off]
+< EPR:3 3 100.0000 X-axis steps per mm
+< EPR:3 7 100.0000 Y-axis steps per mm
+< EPR:3 11 400.0000 Z-axis steps per mm
+< EPR:3 15 400.000 X-axis max. feedrate [mm/s]
+< EPR:3 19 400.000 Y-axis max. feedrate [mm/s]
+< EPR:3 23 4.000 Z-axis max. feedrate [mm/s]
+< EPR:3 27 100.000 X-axis homing feedrate [mm/s]
+< EPR:3 31 100.000 Y-axis homing feedrate [mm/s]
+< EPR:3 35 2.000 Z-axis homing feedrate [mm/s]
+< EPR:3 39 20.000 Max. jerk [mm/s]
+< EPR:3 47 0.300 Max. Z-jerk [mm/s]
+< EPR:3 133 -38.000 X home pos [mm]
+< EPR:3 137 -5.000 Y home pos [mm]
+< EPR:3 141 0.000 Z home pos [mm]
+< EPR:3 145 265.000 X max length [mm]
+< EPR:3 149 230.000 Y max length [mm]
+< EPR:3 153 180.000 Z max length [mm]
+< EPR:3 51 400.000 X-axis acceleration [mm/s^2]
+< EPR:3 55 400.000 Y-axis acceleration [mm/s^2]
+< EPR:3 59 400.000 Z-axis acceleration [mm/s^2]
+< EPR:3 63 400.000 X-axis travel acceleration [mm/s^2]
+< EPR:3 67 400.000 Y-axis travel acceleration [mm/s^2]
+< EPR:3 71 400.000 Z-axis travel acceleration [mm/s^2]
+< EPR:0 106 0 Bed Heat Manager [0-3]
+< EPR:0 107 255 Bed PID drive max
+< EPR:0 124 80 Bed PID drive min
+< EPR:3 108 196.000 Bed PID P-gain
+< EPR:3 112 33.000 Bed PID I-gain
+< EPR:3 116 290.000 Bed PID D-gain
+< EPR:0 120 255 Bed PID max value [0-255]
+< EPR:3 200 90.000 Extr.1 steps per mm
+< EPR:3 204 50.000 Extr.1 max. feedrate [mm/s]
+< EPR:3 208 20.000 Extr.1 start feedrate [mm/s]
+< EPR:3 212 5000.000 Extr.1 acceleration [mm/s^2]
+< EPR:0 216 3 Extr.1 heat manager [0-3]
+< EPR:0 217 230 Extr.1 PID drive max
+< EPR:0 245 50 Extr.1 PID drive min
+< EPR:3 218 7.0000 Extr.1 PID P-gain/dead-time
+< EPR:3 222 2.0000 Extr.1 PID I-gain
+< EPR:3 226 40.0000 Extr.1 PID D-gain
+< EPR:0 230 255 Extr.1 PID max value [0-255]
+< EPR:2 231 0 Extr.1 X-offset [steps]
+< EPR:2 235 0 Extr.1 Y-offset [steps]
+< EPR:1 239 1 Extr.1 temp. stabilize time [s]
+< EPR:1 250 150 Extr.1 temp. for retraction when heating [C]
+< EPR:1 252 0 Extr.1 distance to retract when heating [mm]
+< EPR:0 254 255 Extr.1 extruder cooler speed [0-255]
+
