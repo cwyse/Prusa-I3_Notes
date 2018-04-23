@@ -6,7 +6,6 @@ Resources for building, maintaining and using your Prusa i3 clone.
 ## 1. Printer Specifications
 
 1. General
-
    - Original Developer: [Prusa Research](http://www.prusa3d.com)
    - Vendor:	[Tronxy](http://www.tronxy.com/)
    - Manufacturer: Prusa
@@ -14,144 +13,79 @@ Resources for building, maintaining and using your Prusa i3 clone.
    - Firmware (original): [Repetier-0.91](https://github.com/cwyse/avrdude-build-usbtiny/tree/master/firmware)
    - Version: 1.6
    - Serial Number:
-
 2. Components
-
    - Mainboard: [Melzi 2.0 V5](CJW_Files/Melzi-circuit.png)
-
      - CPU: [ATmega1284P](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42719-ATmega1284P_Datasheet.pdf)
      - ​
-
    - LCD
-
      - 2004A
-
    - 42-Stepper Motors
-
-     - 42 - Motor diameter (mm)
-
-     - H - Hybrid stepper motor
-
-     - 40 - Motor length (mm)
-
-     - 54 - Holding Torque (N-cm)
-
-     - 16 - Amps * 10
-
-     - Sense resistors: 0.11 Ohm
-
-     - Extruder: Tronxy 42H4054-16   NEMA 16   Hybrid, 40 mm length, 54 N-cm Holding Torque, 1.6A
-
-       - Step angle: 1.8 degree (200 steps per revolution  --  check this)
-
-       - view
-         short Details
-
-         Place of origin:
-              Guangdong, China (Mainland)
-
-         Brand:
-              Casun
-
-         Model Number:
-              42SHD4054-17
-
-         Phase:
-              2
-
-         Guy:
-              Hybrid
-
-         Certification:
-              CE, ROHS, TUV
-
-         Angular Step (degrees):
-              1.8 degrees
-
-         Holding pair:
-              280mN. m
-
-         Current / Phase:
-              0.9A
-
-         keyword:
-              3d printer parts
-
-         sample:
-              it can be offered
-
-         Nominal tension:
-              4.05 v
-
-         insulation resistance:
-              100M & Omega; min. (500VDC)
-
-         torque stop:
-              12mn. m
-
-         mass:
-              0.2 kg
-
-         resistace per phase:
-              4.5 & Omega; & 10%;
-
-         inductance per phase:
-              6.6mH & plusmn; 20%
-
-         motor length:
-              It can be customized
-
-         frame size:
-              42mm * 42mm * 34mm
-
-     - X/Y/Z-Axis: Tronxy 42H4062-23  NEMA 17  40 mm length, 62 N-cm Holding Torque, 2.3A
-
-     - 0.1 Ohm Sense resistors
-
-     - X: 0.775 V, 0.969 A
-
-     - Y: 0.861 V, 1.08 A
-
-     - Z: 0.823 V, 1.03 A
-
-     - E: 0.972 V, 1.22 A
-
+     - Motor Code Definition
+       - AABCCDD-EE
+         - AA - Motor diameter (mm)
+         - B - Stepper type (H = Hybrid)
+         - CC - Motor length (mm)
+         - DD -Holding Torque (N-cm)
+         - EE - Amps * 10
+     - Sense resistors: R100 => 0.1 Ohm
+     - Extruder Motor: Tronxy 42H4054-16   NEMA 17   
+       - Hybrid, 40 mm length, 54 N-cm Holding Torque, 1.6A
+       - Step angle: 1.8 degree (200 steps per revolution)
+       - Original Voltage:  E: 0.972 V, 1.22 A
+     - X/Y/Z-Axis: Tronxy 42H4062-23  NEMA 17 
+       - Hybrid, 40 mm length, 62 N-cm Holding Torque, 2.3A
+       - Step angle: 1.8 degree (200 steps per revolution)
+       - Original Voltage:  X: 0.775 V, 0.969 A
+       - Original Voltage:  Y: 0.861 V, 1.08 A
+       - Original Voltage:  Z: 0.823 V, 1.03 A
      - 4 [A4982 Stepper Motor Driver](CJW_Files/A4982-Datasheet.pdf)
-
-       - Inputs: MS1 - 5 V, MS2 - 5V  =>  Sixteen Step Resolution, 4W1-2 Phase
-
+       - Inputs: MS1 - 5 V, MS2 - 5V  =>  Sixteen
+       -  Step Resolution, 4W1-2 Phase (value measured)
      - [Parameter calculations](https://www.prusaprinters.org/calculator/#steppers)
-
      - [Better parameter explanation](https://www.matterhackers.com/news/3d-printer-firmware-settings-stepper-motor-configuration)
-
+   - Pulleys
+     - GT2
+     - 16 teeth
+   - Belts
+     - 2 mm pitch
+   - Lead screw (M8)
+     - 2 mm pitch (spacing between threads)
+     - 8 mm lead (travel per revolution)
+     - 8 mm diameter
+     - 4 Start Thread
    - MK3 Hotbed
-
      - 3 mm Aluminum
-
    - Extruder
-
      - Tronxy P802M Extruder
      - Nozzle: 0.3 mm
      - Heating Tube: 12V 40W
      - Thermistor 100K
      - 1.75 mm Filament
-
    - Power Supply
-
      - Tronxy S-250-12
      - AC Input: 110/220V +/- 15%, 50/60Hz
      - DC Output: 12V 20A
      - Power 240W
-
 3. Miscellaneous
-
    - [3D Printer Filament Guide 2018](https://all3dp.com/1/3d-printer-filament-types-3d-printing-3d-filament/)
    - [PLA Filaments | ABS Filaments | Filament Recycler | RePLAy 3D](https://replay-3d.com/)
    - [USB Tiny ISP Programmer](https://www.amazon.com/gp/product/B01FDD4EP0/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
      - Brand: SenMod
      - ![1523839624053](Files_CJW/USBTinyDescription.png)
 
-## 2.  Documentation
+## 2.  Parameter Calculations
+
+1. Step per mm for leadscrews
+   - 2560 steps/mm
+   - [Calculation](Files_CJW/LeadscrewStepsPerMM.JPG)
+2. Step per mm for belts
+   - 100 steps/mm
+   - [Calculation](Files_CJW/BeltsStepsPerMM.JPG)
+3. Axis calibration 4/23/18
+   - X/Y/Z -  No calibration needed
+4. Extruder calibration
+
+## 3.  Documentation
 
 1. [Tronxy 3D Printer X6D Installation Guide](https://github.com/cwyse/3D-Printer-2018/blob/master/Files/TRONXY_X6D_installation_guideV.01.pdf)
 
