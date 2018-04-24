@@ -43,6 +43,10 @@ Resources for building, maintaining and using your Prusa i3 clone.
        -  Step Resolution, 4W1-2 Phase (value measured)
      - [Parameter calculations](https://www.prusaprinters.org/calculator/#steppers)
      - [Better parameter explanation](https://www.matterhackers.com/news/3d-printer-firmware-settings-stepper-motor-configuration)
+   - Thermistors - NTC 3950
+     - 100 K, 4.7K Pullup, Measured@20C: ??
+     - NTC 3950
+     - Marlin Thermistor table 11 -  [Calculated from beta value](Files_CJW/Thermistor_Table_Calculator.xlsm) (3950).  Better to use SteinhartHart, but requires temperature measurement.  
    - Pulleys
      - GT2
      - 16 teeth
@@ -76,7 +80,7 @@ Resources for building, maintaining and using your Prusa i3 clone.
 ## 2.  Parameter Calculations
 
 1. Step per mm for leadscrews
-   - 2560 steps/mm
+   - 2560 steps/mm  => Other calculator give 400 steps/mm ?????
    - [Calculation](Files_CJW/LeadscrewStepsPerMM.JPG)
 2. Step per mm for belts
    - 100 steps/mm
@@ -84,6 +88,7 @@ Resources for building, maintaining and using your Prusa i3 clone.
 3. Axis calibration 4/23/18
    - X/Y/Z -  No calibration needed
 4. Extruder calibration
+5. PIDTEMPBED -- Enable after adding MOSFET power
 
 ## 3.  Documentation
 
